@@ -1,13 +1,13 @@
 :root {
-  --bg: #070716;
-  --bg-soft: #11112a;
-  --text: #f4f4f9;
-  --text-muted: #c5c6dd;
-  --card: rgba(255, 255, 255, 0.06);
-  --line: rgba(255, 255, 255, 0.12);
-  --accent: #8a5bff;
-  --accent-alt: #09d5c3;
-  --shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+  --bg: #f8fbff;
+  --bg-soft: #ffffff;
+  --text: #1c2740;
+  --text-muted: #5b6682;
+  --card: rgba(255, 255, 255, 0.86);
+  --line: rgba(120, 140, 186, 0.24);
+  --accent: #6a6dff;
+  --accent-alt: #1ac6bc;
+  --shadow: 0 18px 45px rgba(103, 119, 162, 0.18);
 }
 
 * {
@@ -23,7 +23,11 @@ body {
 body {
   min-height: 100vh;
   font-family: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top right, #1f125e 0%, var(--bg) 55%), var(--bg);
+  background:
+    radial-gradient(circle at 12% 14%, rgba(168, 255, 244, 0.5) 0%, rgba(168, 255, 244, 0) 42%),
+    radial-gradient(circle at 85% 8%, rgba(196, 212, 255, 0.58) 0%, rgba(196, 212, 255, 0) 46%),
+    radial-gradient(circle at 50% 82%, rgba(255, 223, 195, 0.45) 0%, rgba(255, 223, 195, 0) 40%),
+    var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
@@ -47,8 +51,8 @@ img {
   position: sticky;
   top: 0;
   z-index: 40;
-  backdrop-filter: blur(8px);
-  background: rgba(7, 7, 22, 0.72);
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid var(--line);
 }
 
@@ -84,7 +88,8 @@ img {
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--text);
-  background: var(--card);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow);
 }
 
 .nav-toggle {
@@ -122,7 +127,7 @@ img {
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: var(--accent-alt);
+  color: #0f9f98;
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
@@ -166,12 +171,13 @@ h3 {
 }
 
 .btn-primary {
-  background: linear-gradient(120deg, var(--accent), #5f7dff);
+  color: #fff;
+  background: linear-gradient(120deg, var(--accent), #7e8dff);
 }
 
 .btn-secondary {
   border-color: var(--line);
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .page-section {
@@ -204,6 +210,7 @@ h3 {
   border-radius: 1rem;
   border: 1px solid var(--line);
   background: var(--bg-soft);
+  box-shadow: var(--shadow);
   aspect-ratio: 4 / 5;
 }
 
@@ -213,25 +220,19 @@ h3 {
   transition: transform 0.45s ease;
 }
 
-.gallery-item::after {
-  content: "View";
+.gallery-item h2 {
   position: absolute;
   inset: auto 0 0;
-  padding: 0.7rem;
+  margin: 0;
+  padding: 0.8rem;
   text-align: center;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
-  opacity: 0;
-  transform: translateY(20%);
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  font-size: 1rem;
+  background: linear-gradient(to top, rgba(28, 39, 64, 0.78), rgba(28, 39, 64, 0.05));
+  color: #fff;
 }
 
 .gallery-item:hover img {
   transform: scale(1.06);
-}
-
-.gallery-item:hover::after {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .writing-list {
@@ -244,11 +245,12 @@ h3 {
   border-radius: 1rem;
   background: var(--card);
   padding: 1.25rem;
+  box-shadow: var(--shadow);
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .writing-piece:hover {
-  border-color: rgba(138, 91, 255, 0.7);
+  border-color: rgba(106, 109, 255, 0.5);
   transform: translateY(-2px);
 }
 
@@ -264,7 +266,7 @@ h3 {
 }
 
 .writing-piece a {
-  color: var(--accent-alt);
+  color: #0f9f98;
   font-weight: 600;
 }
 
@@ -278,6 +280,7 @@ h3 {
   border-radius: 1rem;
   background: var(--card);
   padding: 1.3rem;
+  box-shadow: var(--shadow);
 }
 
 .card h2 {
@@ -322,7 +325,7 @@ h3 {
     top: 72px;
     left: 0;
     right: 0;
-    background: rgba(7, 7, 22, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid var(--line);
     flex-direction: column;
     align-items: stretch;
