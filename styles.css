@@ -125,9 +125,7 @@ img {
 
 .home-feature-image {
   width: 100%;
-  max-height: calc(100vh - 210px);
-  object-fit: cover;
-  border-radius: 1rem;
+  height: auto;
 }
 
 .hero {
