@@ -272,6 +272,51 @@ h3 {
   font-weight: 600;
 }
 
+
+.writing-details summary {
+  cursor: pointer;
+  color: #0f9f98;
+  font-weight: 600;
+  list-style: none;
+}
+
+.writing-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.writing-details summary::after {
+  content: "▾";
+  margin-left: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.writing-details[open] summary::after {
+  content: "▴";
+}
+
+.pdf-list {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+.pdf-list li + li {
+  margin-top: 0.5rem;
+}
+
+.pdf-list a {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 0.45rem 0.7rem;
+  color: var(--text);
+  transition: border-color 0.2s ease;
+}
+
+.pdf-list a:hover {
+  border-color: var(--accent-alt);
+}
+
 .about-grid {
   display: grid;
   gap: 1.2rem;
