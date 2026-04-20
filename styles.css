@@ -112,6 +112,24 @@ img {
   border: 0;
 }
 
+
+.home-main {
+  padding: 2rem 0 3rem;
+}
+
+.home-main h1 {
+  text-align: center;
+  font-size: clamp(2.2rem, 6vw, 5.1rem);
+  margin-bottom: 1.5rem;
+}
+
+.home-feature-image {
+  width: 100%;
+  max-height: calc(100vh - 210px);
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
 .hero {
   min-height: calc(100vh - 72px);
   display: grid;
