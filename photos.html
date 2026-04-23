@@ -38,64 +38,129 @@
         <h1>Photography</h1>
       </section>
 
-      <section class="photo-tabs" aria-label="Photo categories">
-        <button class="photo-tab active" type="button" data-tab="beach">Beach</button>
+      <section class="photo-sections" data-photo-overview>
+        <a class="gallery-item" href="photos.html?section=beach">
+          <img src="beach37.jpg" alt="Beach section cover" loading="lazy" />
+          <h2>Beach</h2>
+        </a>
+        <a class="gallery-item" href="photos.html?section=portraits">
+          <img src="beach10.jpg" alt="Portraits section cover" loading="lazy" />
+          <h2>Portraits</h2>
+        </a>
+        <a class="gallery-item" href="photos.html?section=street">
+          <img src="beach23.jpg" alt="Street section cover" loading="lazy" />
+          <h2>Street</h2>
+        </a>
+        <a class="gallery-item" href="photos.html?section=landscape">
+          <img src="beach41.jpg" alt="Landscape section cover" loading="lazy" />
+          <h2>Landscape</h2>
+        </a>
+        <a class="gallery-item" href="photos.html?section=travel">
+          <img src="beach6.jpg" alt="Travel section cover" loading="lazy" />
+          <h2>Travel</h2>
+        </a>
+        <a class="gallery-item" href="photos.html?section=film">
+          <img src="beach33.jpg" alt="Film section cover" loading="lazy" />
+          <h2>Film</h2>
+        </a>
+        <a class="gallery-item" href="photos.html?section=night">
+          <img src="beach45.jpg" alt="Night section cover" loading="lazy" />
+          <h2>Night</h2>
+        </a>
+        <a class="gallery-item" href="photos.html?section=editorial">
+          <img src="beach2.jpg" alt="Editorial section cover" loading="lazy" />
+          <h2>Editorial</h2>
+        </a>
       </section>
 
-      <section class="tab-panel active" data-panel="beach" aria-label="Beach photo gallery">
-        <article class="gallery-item beach-cover">
-          <img src="beach37.jpg" alt="Beach tab cover photo" loading="lazy" />
-          <h2>Beach</h2>
-        </article>
-        <div class="beach-gallery">
-            <img src="beach1.jpg" alt="Beach photo 1" loading="lazy" />
-            <img src="beach2.jpg" alt="Beach photo 2" loading="lazy" />
-            <img src="beach3.jpg" alt="Beach photo 3" loading="lazy" />
-            <img src="beach4.jpg" alt="Beach photo 4" loading="lazy" />
-            <img src="beach5.jpg" alt="Beach photo 5" loading="lazy" />
-            <img src="beach6.jpg" alt="Beach photo 6" loading="lazy" />
-            <img src="beach7.jpg" alt="Beach photo 7" loading="lazy" />
-            <img src="beach8.jpg" alt="Beach photo 8" loading="lazy" />
-            <img src="beach9.jpg" alt="Beach photo 9" loading="lazy" />
-            <img src="beach10.jpg" alt="Beach photo 10" loading="lazy" />
-            <img src="beach11.jpg" alt="Beach photo 11" loading="lazy" />
-            <img src="beach12.jpg" alt="Beach photo 12" loading="lazy" />
-            <img src="beach13.jpg" alt="Beach photo 13" loading="lazy" />
-            <img src="beach14.jpg" alt="Beach photo 14" loading="lazy" />
-            <img src="beach15.jpg" alt="Beach photo 15" loading="lazy" />
-            <img src="beach16.jpg" alt="Beach photo 16" loading="lazy" />
-            <img src="beach17.jpg" alt="Beach photo 17" loading="lazy" />
-            <img src="beach18.jpg" alt="Beach photo 18" loading="lazy" />
-            <img src="beach19.jpg" alt="Beach photo 19" loading="lazy" />
-            <img src="beach20.jpg" alt="Beach photo 20" loading="lazy" />
-            <img src="beach21.jpg" alt="Beach photo 21" loading="lazy" />
-            <img src="beach22.jpg" alt="Beach photo 22" loading="lazy" />
-            <img src="beach23.jpg" alt="Beach photo 23" loading="lazy" />
-            <img src="beach24.jpg" alt="Beach photo 24" loading="lazy" />
-            <img src="beach25.jpg" alt="Beach photo 25" loading="lazy" />
-            <img src="beach26.jpg" alt="Beach photo 26" loading="lazy" />
-            <img src="beach27.jpg" alt="Beach photo 27" loading="lazy" />
-            <img src="beach28.jpg" alt="Beach photo 28" loading="lazy" />
-            <img src="beach29.jpg" alt="Beach photo 29" loading="lazy" />
-            <img src="beach30.jpg" alt="Beach photo 30" loading="lazy" />
-            <img src="beach31.jpg" alt="Beach photo 31" loading="lazy" />
-            <img src="beach32.jpg" alt="Beach photo 32" loading="lazy" />
-            <img src="beach33.jpg" alt="Beach photo 33" loading="lazy" />
-            <img src="beach34.jpg" alt="Beach photo 34" loading="lazy" />
-            <img src="beach35.jpg" alt="Beach photo 35" loading="lazy" />
-            <img src="beach36.jpg" alt="Beach photo 36" loading="lazy" />
-            <img src="beach37.jpg" alt="Beach photo 37" loading="lazy" />
-            <img src="beach38.jpg" alt="Beach photo 38" loading="lazy" />
-            <img src="beach39.jpg" alt="Beach photo 39" loading="lazy" />
-            <img src="beach40.jpg" alt="Beach photo 40" loading="lazy" />
-            <img src="beach41.jpg" alt="Beach photo 41" loading="lazy" />
-            <img src="beach42.jpg" alt="Beach photo 42" loading="lazy" />
-            <img src="beach43.jpg" alt="Beach photo 43" loading="lazy" />
-            <img src="beach44.jpg" alt="Beach photo 44" loading="lazy" />
-            <img src="beach45.jpg" alt="Beach photo 45" loading="lazy" />
-            <img src="beach46.jpg" alt="Beach photo 46" loading="lazy" />
-            <img src="beach47.jpg" alt="Beach photo 47" loading="lazy" />
+      <section class="photo-detail" data-photo-section="beach" hidden>
+        <a class="back-link" href="photos.html">← Back to all photo sections</a>
+        <h2>Beach</h2>
+        <div class="beach-gallery masonry-gallery">
+          <img src="beach1.jpg" alt="Beach photo 1" loading="lazy" />
+          <img src="beach2.jpg" alt="Beach photo 2" loading="lazy" />
+          <img src="beach3.jpg" alt="Beach photo 3" loading="lazy" />
+          <img src="beach4.jpg" alt="Beach photo 4" loading="lazy" />
+          <img src="beach5.jpg" alt="Beach photo 5" loading="lazy" />
+          <img src="beach6.jpg" alt="Beach photo 6" loading="lazy" />
+          <img src="beach7.jpg" alt="Beach photo 7" loading="lazy" />
+          <img src="beach8.jpg" alt="Beach photo 8" loading="lazy" />
+          <img src="beach9.jpg" alt="Beach photo 9" loading="lazy" />
+          <img src="beach10.jpg" alt="Beach photo 10" loading="lazy" />
+          <img src="beach11.jpg" alt="Beach photo 11" loading="lazy" />
+          <img src="beach12.jpg" alt="Beach photo 12" loading="lazy" />
+          <img src="beach13.jpg" alt="Beach photo 13" loading="lazy" />
+          <img src="beach14.jpg" alt="Beach photo 14" loading="lazy" />
+          <img src="beach15.jpg" alt="Beach photo 15" loading="lazy" />
+          <img src="beach16.jpg" alt="Beach photo 16" loading="lazy" />
+          <img src="beach17.jpg" alt="Beach photo 17" loading="lazy" />
+          <img src="beach18.jpg" alt="Beach photo 18" loading="lazy" />
+          <img src="beach19.jpg" alt="Beach photo 19" loading="lazy" />
+          <img src="beach20.jpg" alt="Beach photo 20" loading="lazy" />
+          <img src="beach21.jpg" alt="Beach photo 21" loading="lazy" />
+          <img src="beach22.jpg" alt="Beach photo 22" loading="lazy" />
+          <img src="beach23.jpg" alt="Beach photo 23" loading="lazy" />
+          <img src="beach24.jpg" alt="Beach photo 24" loading="lazy" />
+          <img src="beach25.jpg" alt="Beach photo 25" loading="lazy" />
+          <img src="beach26.jpg" alt="Beach photo 26" loading="lazy" />
+          <img src="beach27.jpg" alt="Beach photo 27" loading="lazy" />
+          <img src="beach28.jpg" alt="Beach photo 28" loading="lazy" />
+          <img src="beach29.jpg" alt="Beach photo 29" loading="lazy" />
+          <img src="beach30.jpg" alt="Beach photo 30" loading="lazy" />
+          <img src="beach31.jpg" alt="Beach photo 31" loading="lazy" />
+          <img src="beach32.jpg" alt="Beach photo 32" loading="lazy" />
+          <img src="beach33.jpg" alt="Beach photo 33" loading="lazy" />
+          <img src="beach34.jpg" alt="Beach photo 34" loading="lazy" />
+          <img src="beach35.jpg" alt="Beach photo 35" loading="lazy" />
+          <img src="beach36.jpg" alt="Beach photo 36" loading="lazy" />
+          <img src="beach37.jpg" alt="Beach photo 37" loading="lazy" />
+          <img src="beach38.jpg" alt="Beach photo 38" loading="lazy" />
+          <img src="beach39.jpg" alt="Beach photo 39" loading="lazy" />
+          <img src="beach40.jpg" alt="Beach photo 40" loading="lazy" />
+          <img src="beach41.jpg" alt="Beach photo 41" loading="lazy" />
+          <img src="beach42.jpg" alt="Beach photo 42" loading="lazy" />
+          <img src="beach43.jpg" alt="Beach photo 43" loading="lazy" />
+          <img src="beach44.jpg" alt="Beach photo 44" loading="lazy" />
+          <img src="beach45.jpg" alt="Beach photo 45" loading="lazy" />
+          <img src="beach46.jpg" alt="Beach photo 46" loading="lazy" />
+          <img src="beach47.jpg" alt="Beach photo 47" loading="lazy" />
         </div>
+      </section>
+
+      <section class="photo-detail" data-photo-section="portraits" hidden>
+        <a class="back-link" href="photos.html">← Back to all photo sections</a>
+        <h2>Portraits</h2>
+        <p>Photos coming soon.</p>
+      </section>
+      <section class="photo-detail" data-photo-section="street" hidden>
+        <a class="back-link" href="photos.html">← Back to all photo sections</a>
+        <h2>Street</h2>
+        <p>Photos coming soon.</p>
+      </section>
+      <section class="photo-detail" data-photo-section="landscape" hidden>
+        <a class="back-link" href="photos.html">← Back to all photo sections</a>
+        <h2>Landscape</h2>
+        <p>Photos coming soon.</p>
+      </section>
+      <section class="photo-detail" data-photo-section="travel" hidden>
+        <a class="back-link" href="photos.html">← Back to all photo sections</a>
+        <h2>Travel</h2>
+        <p>Photos coming soon.</p>
+      </section>
+      <section class="photo-detail" data-photo-section="film" hidden>
+        <a class="back-link" href="photos.html">← Back to all photo sections</a>
+        <h2>Film</h2>
+        <p>Photos coming soon.</p>
+      </section>
+      <section class="photo-detail" data-photo-section="night" hidden>
+        <a class="back-link" href="photos.html">← Back to all photo sections</a>
+        <h2>Night</h2>
+        <p>Photos coming soon.</p>
+      </section>
+      <section class="photo-detail" data-photo-section="editorial" hidden>
+        <a class="back-link" href="photos.html">← Back to all photo sections</a>
+        <h2>Editorial</h2>
+        <p>Photos coming soon.</p>
       </section>
     </main>
 

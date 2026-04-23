@@ -117,64 +117,6 @@ img {
   padding: 2rem 0 3rem;
 }
 
-.home-header-title {
-  text-align: center;
-  font-size: clamp(1.5rem, 3.2vw, 2.2rem);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  padding-bottom: 0.65rem;
-}
-
-.photo-tabs {
-  display: flex;
-  gap: 0.6rem;
-  margin-bottom: 1rem;
-}
-
-.photo-tab {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: #fff;
-  color: var(--text-muted);
-  padding: 0.45rem 0.95rem;
-  font: inherit;
-}
-
-.photo-tab.active {
-  color: var(--text);
-  border-color: rgba(106, 109, 255, 0.4);
-}
-
-.tab-panel {
-  display: none;
-}
-
-.tab-panel.active {
-  display: block;
-}
-
-.beach-cover {
-  margin-bottom: 0.6rem;
-  border-radius: 0;
-}
-
-.beach-cover img {
-  object-fit: contain;
-}
-
-.beach-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.4rem;
-}
-
-.beach-gallery img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 0;
-}
-
 
 .home-feature-image {
   width: 100%;
@@ -375,33 +317,61 @@ h3 {
   border-color: var(--accent-alt);
 }
 
+.photo-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.photo-detail h2 {
+  margin: 0 0 1rem;
+}
+
+.photo-detail:not([hidden]) {
+  display: block;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  color: #0f9f98;
+  font-weight: 600;
+}
+
+.masonry-gallery {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.masonry-gallery img {
+  width: 100%;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
-  gap: 1.2rem;
+  gap: 1.5rem;
   align-items: start;
 }
 
-.about-stack {
-  display: grid;
-  gap: 1.2rem;
+.about-copy h1 {
+  font-size: clamp(1.9rem, 3.5vw, 3rem);
+  margin-bottom: 1rem;
 }
 
-.card {
-  border: 1px solid var(--line);
-  border-radius: 1rem;
-  background: var(--card);
-  padding: 1.3rem;
-  box-shadow: var(--shadow);
+.about-copy h2 {
+  margin: 0 0 0.6rem;
 }
 
-.card h2 {
-  margin-bottom: 0.8rem;
-}
-
-.card p,
-.card li {
+.about-copy p,
+.about-copy li {
   color: var(--text-muted);
+}
+
+.about-photo-shifted {
+  margin-top: -2.6rem;
 }
 
 .social-links {
@@ -478,7 +448,23 @@ h3 {
     padding-top: 2rem;
   }
 
+  .masonry-gallery {
+    column-count: 2;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-photo-shifted {
+    margin-top: 0;
+    max-width: 420px;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .masonry-gallery {
+    column-count: 1;
   }
 }
