@@ -55,7 +55,7 @@ img {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
   min-height: 72px;
   gap: 1rem;
@@ -115,12 +115,6 @@ img {
 
 .home-main {
   padding: 2rem 0 3rem;
-}
-
-.home-main h1 {
-  text-align: center;
-  font-size: clamp(2.2rem, 6vw, 5.1rem);
-  margin-bottom: 1.5rem;
 }
 
 .home-feature-image {
@@ -324,6 +318,13 @@ h3 {
 
 .about-grid {
   display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.about-stack {
+  display: grid;
   gap: 1.2rem;
 }
 
@@ -365,6 +366,17 @@ h3 {
   border-color: var(--accent-alt);
 }
 
+.about-photo {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.about-photo img {
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 720px) {
   .nav {
     justify-content: space-between;
@@ -403,5 +415,9 @@ h3 {
 
   .hero {
     padding-top: 2rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 }
