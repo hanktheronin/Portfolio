@@ -117,6 +117,65 @@ img {
   padding: 2rem 0 3rem;
 }
 
+.home-header-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding-bottom: 0.65rem;
+}
+
+.photo-tabs {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.photo-tab {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--text-muted);
+  padding: 0.45rem 0.95rem;
+  font: inherit;
+}
+
+.photo-tab.active {
+  color: var(--text);
+  border-color: rgba(106, 109, 255, 0.4);
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.beach-cover {
+  margin-bottom: 0.6rem;
+  border-radius: 0;
+}
+
+.beach-cover img {
+  object-fit: contain;
+}
+
+.beach-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.4rem;
+}
+
+.beach-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+
 .home-feature-image {
   width: 100%;
   height: auto;
@@ -373,8 +432,10 @@ h3 {
 }
 
 .about-photo img {
-  height: 100%;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
 }
 
 @media (max-width: 720px) {
