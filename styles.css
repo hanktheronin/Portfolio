@@ -119,8 +119,12 @@ img {
 
 
 .home-feature-image {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 130px);
   height: auto;
+  margin-inline: auto;
+  object-fit: contain;
 }
 
 .hero {
@@ -321,6 +325,25 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
+}
+
+.photo-sections.has-selection .gallery-item {
+  aspect-ratio: 4 / 3;
+}
+
+.photo-sections.has-selection .gallery-item.is-minimized {
+  aspect-ratio: 16 / 9;
+  opacity: 0.72;
+}
+
+.photo-sections.has-selection .gallery-item.is-minimized h2 {
+  font-size: 0.9rem;
+  background: rgba(28, 39, 64, 0.26);
+}
+
+.photo-sections.has-selection .gallery-item.is-selected {
+  opacity: 1;
+  border-color: rgba(106, 109, 255, 0.55);
 }
 
 .photo-detail h2 {
