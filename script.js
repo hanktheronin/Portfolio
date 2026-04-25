@@ -24,6 +24,7 @@
     const params = new URLSearchParams(window.location.search);
     const selectedSection = params.get('section');
     const overview = document.querySelector('[data-photo-overview]');
+    const overviewItems = overview?.querySelectorAll('.gallery-item') ?? [];
     const panels = document.querySelectorAll('[data-photo-section]');
 
     if (!selectedSection) {
@@ -36,7 +37,13 @@
     }
 
     if (overview) {
-      overview.hidden = true;
+      overview.classList.add('has-selection');
+      overviewItems.forEach((item) => {
+        const itemSection = new URL(item.href).searchParams.get('section');
+        const isSelected = itemSection === selectedSection;
+        item.classList.toggle('is-selected', isSelected);
+        item.classList.toggle('is-minimized', !isSelected);
+      });
     }
 
     panels.forEach((panel) => {
